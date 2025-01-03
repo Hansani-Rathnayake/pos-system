@@ -1,0 +1,27 @@
+
+<h2>Dashboard</h2>
+
+<nav>
+  <button routerLink="/customers">Customers</button>
+  <button routerLink="/items">Items</button>
+  <button routerLink="/orders">Orders</button>
+</nav>
+
+<div class="dashboard-stats">
+  <div class="stat-card">
+    <h3>Total Customers</h3>
+    <p>{{ stats.totalCustomers }}</p>
+  </div>
+  <div class="stat-card">
+    <h3>Total Items</h3>
+    <p>{{ stats.totalOrders }}</p>
+  </div>
+  <div class="stat-card">
+    <h3>Total Orders</h3>
+    <p>{{ stats.totalOrders }}</p>
+  </div>
+  <div class="stat-card">
+    <h3>Total Revenue</h3>
+    <p>${{ stats.totalRevenue }}</p>
+  </div>
+</div>
